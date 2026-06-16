@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -16,6 +15,32 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 600, 1); 
+        prepare();
+    }
+    
+    public void act(){
+            addUFO();
+            addBomb();
+    }
+    public void addUFO(){
+        if(Greenfoot.getRandomNumber(120)<1){
+            addObject(new UFO(), Greenfoot.getRandomNumber(600), 0);
+        }
+    }
+    public void addBomb(){
+        if(Greenfoot.getRandomNumber(160)<1){
+            addObject(new Bomb(), Greenfoot.getRandomNumber(600), 0);
+        }
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Player player = new Player();
+        addObject(player,288,534);
     }
 }
