@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Player\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Player\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=
@@ -10,9 +10,13 @@ comment3.target=void\ moveBelow()
 comment4.params=
 comment4.target=boolean\ hitCeiling()
 comment5.params=
-comment5.target=void\ fall()
+comment5.target=boolean\ onGround()
 comment6.params=
-comment6.target=boolean\ onGround()
+comment6.target=void\ checkFalling()
 comment7.params=
-comment7.target=void\ checkFalling()
-numComments=8
+comment7.target=int\ hittingSide()
+comment8.params=
+comment8.target=void\ moveSide()
+comment9.params=
+comment9.target=void\ fall()
+numComments=10

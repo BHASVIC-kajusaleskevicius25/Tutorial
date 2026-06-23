@@ -17,6 +17,17 @@ public class Cloud extends Actor
     }
     public void act()
     {
-        move(-1);
+        if(Greenfoot.isKeyDown("d")){
+            move(-1);
+        }
+        if(Greenfoot.isKeyDown("a")){
+            move(1);
+        }
+        if(getX()<=0){
+            setLocation(998,Greenfoot.getRandomNumber(240)+10);
+        }
+        if(getX()==999){
+            setLocation(1,Greenfoot.getRandomNumber(240)+10);
+        }
     }
 }

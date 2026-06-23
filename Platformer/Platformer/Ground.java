@@ -13,11 +13,23 @@ public class Ground extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public Ground(){
-        getImage().scale(getImage().getWidth()*6,getImage().getHeight()*2);
+        getImage().scale(getImage().getWidth()*6,getImage().getHeight());
     }
     
     public void act()
     {
-        // Add your action code here.
+        if(Greenfoot.isKeyDown("d")){
+            move(-5);
+        }
+        if(Greenfoot.isKeyDown("a")){
+            move(5);
+        }
+        
+        if(getX()<=0){
+            setLocation(998,getY());
+        }
+        if(getX()==999){
+            setLocation(1,getY());
+        }
     }
 }
