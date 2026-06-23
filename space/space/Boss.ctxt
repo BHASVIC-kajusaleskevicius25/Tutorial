@@ -1,7 +1,13 @@
 #BlueJ class context
 comment0.target=Boss
 comment0.text=\n\ Write\ a\ description\ of\ class\ Boss\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=void\ act()
+comment1.params=TIMEHIT
+comment1.target=Boss(int)
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Boss\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
-numComments=2
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ moveEnemy()
+comment4.params=
+comment4.target=void\ remove()
+numComments=5

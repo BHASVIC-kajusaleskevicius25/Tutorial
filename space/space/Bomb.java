@@ -12,9 +12,14 @@ public class Bomb extends Enemy
      * Act - do whatever the Bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Bomb(int TIMEHIT){
+        this.timeHit= TIMEHIT;
+    }
     public void act()
     {
         moveEnemy();
         remove();
     }
+    
+    
 }

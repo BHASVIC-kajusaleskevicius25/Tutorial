@@ -9,7 +9,7 @@ import greenfoot.GreenfootImage;
  */
 public class Counter extends Actor
 {
-    int score = 0;
+    int score = 24;
     /**
      * Act - do whatever the Counter wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
